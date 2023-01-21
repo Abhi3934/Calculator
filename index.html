@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+
+  <!--/////////////////////////////////////////////////////////////// Navbar //////////////////////////////////////////////////////////////////-->
+
+  <div class="calci">
+    <nav>
+        <div class="logo"> <a style="font-family: 'Sacramento', cursive;">Calculate<span style="font-family: 'Sacramento', cursive;">me!   </span></a><i class="fa fa-calculator fa-3x" aria-hidden="true"></i> </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"> 
+           
+        </label>
+        <ul class="menu">
+          <li><a class="H on">CALCULATOR</a></li>
+          <li><a class="A">DISTANCE</a></li>
+          <li><a class="CM">WEIGHT</a></li>
+          <li><a class="AM">CURRENCY</a></li>
+      </ul>
+    </nav>
+</div>
+
+<!-- ------------------------------------------------------------calculator------------------------------------------------------------------- -->
+  <div class="home">
+  <div class="container">
+    <div class="Calculator">
+        
+        <input type="text" placeholder="0" id="inputext">
+        <button onclick="clr()">C</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="calculate('%')">%</button>
+        <button onclick="calculate('/')">/</button>
+        <button onclick="calculate('7')">7</button>
+        <button onclick="calculate('8')">8</button>
+        <button onclick="calculate('9')">9</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('4')">4</button>
+        <button onclick="calculate('5')">5</button>
+        <button onclick="calculate('6')">6</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('1')">1</button>
+        <button onclick="calculate('2')">2</button>
+        <button onclick="calculate('3')">3</button>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('.')">.</button>
+        <button onclick="calculate('0')">0</button>
+        <button onclick="Result('=')" class="equal">=</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!--/////////////////////////////////////////////////////////////////// Distance Converter------------------------------------ -->
+<div class="about">
+<h1>Distance Converter</h1>
+    <div id="container2">
+    <div class="input-div">
+        <label>Feet</label><br>
+        <input type="Number" value="1" id="feet" class="inpt">
+    </div>
+
+    <div class="input-div">
+        <h1>=</h1>
+    </div>
+
+    <div class="input-div">
+        <label>Inches</label><br>
+        <input type="Number" value="12" id="inches" class="inpt">
+    </div>
+  </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////weight converter start--------------------------------------- -->
+
+  <div class="contactMe">
+
+    <div class="container1">
+      <h2>Mass Converter</h2>
+      <div class="input-wrapper">
+        <label for="kg">Kilogram:</label>
+        <input type="number" id="kg" value="10" class="ipt" />
+      </div>
+      <div class="input-wrapper">
+        <label for="lb">Pounds:</label>
+        <input type="number" id="lb" class="ipt" />
+      </div>
+      <div class="input-wrapper">
+        <label for="oz">Ounces:</label>
+        <input type="number" id="oz" class="ipt" />
+      </div>
+    </div>
+  
+    </div>
+    
+
+  <!-- //////////////////////////////////////////////////////////////////////////currency converter start -------------------------------->
+
+  <div class="currency">
+
+    <div class="wrapper">
+    <header>Currency Converter</header>
+    <form action="#">
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input type="text" value="1">
+      </div>
+      <div class="drop-list">
+        <div class="from">
+          <p>From</p>
+          <div class="select-box">
+            <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+            <select></select>
+          </div>
+        </div>
+        <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+        <div class="to">
+          <p>To</p>
+          <div class="select-box">
+            <img src="https://flagcdn.com/48x36/in.png" alt="flag">
+            <select></select>
+          </div>
+        </div>
+      </div>
+      <div class="exchange-rate">Getting exchange rate...</div>
+      <button>Get Exchange Rate</button>
+    </form>
+  </div>
+  </div>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/54fba95dbc.js" crossorigin="anonymous"></script> 
+<script src="country_list.js"></script>
+<script src="currency.js"></script>
+
+</body>
+</html> 
